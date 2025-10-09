@@ -1,0 +1,196 @@
+---
+---
+<aside class="right-sidebar">
+    <div class="right-sidebar-content">
+        <h3>Topics</h3>
+        <ul class="topics-list">
+            <li><a href="#topic1">Topic 1</a></li>
+            <li><a href="#topic2">Topic 2</a></li>
+            <li><a href="#topic3">Topic 3</a>
+            <ul>
+                <li><a href="#side-topic1">Side Topic 1</a></li>
+                <li><a href="#side-topic2">Side Topic 2</a></li>
+                <li><a href="#side-topic3">Side Topic 3</a></li>
+            </ul>
+            </li>
+            <li><a href="#topic4">Topic 4</a></li>
+        </ul>
+        </div>
+    </div>
+</aside>
+
+<style>
+    .right-sidebar {
+        width: var(--right-sidebar-width); 
+        background-color: var(--bg-white);
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1); 
+        position: fixed;
+        height: 100vh; 
+        right: 0;
+        top: 0; 
+        padding-top: var(--header-height); 
+        overflow-y: auto; 
+        z-index: 999; 
+        box-sizing: border-box;
+    }
+
+    .right-sidebar-content {
+        padding: 20px; /* Add padding to inner content */
+    }
+
+    .right-sidebar h3 {
+        font-size: 1.1em;
+        color: var(--primary-text);
+        margin-bottom: 15px;
+        margin-top: 20px; /* Add some top margin for sections */
+    }
+
+    .topics-list {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .topics-list li a {
+        text-decoration: none;
+        color: var(--secondary-text);
+        display: block;
+        padding: 5px 0;
+        transition: color 0.2s;
+    }
+
+    .topics-list li a:hover {
+        color: var(--hover-color);
+    }
+
+    .feedback-box {
+        background-color: #f8f9fa; /* Lighter background */
+        border: 1px solid #e9ecef;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px; /* Add margin to separate from next box */
+        text-align: center; /* Center text */
+    }
+
+    .feedback-box h4 {
+        font-size: 0.95em; /* Slightly smaller font */
+        color: var(--primary-text);
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+
+    .request-access-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: background-color 0.2s;
+    }
+
+    .request-access-button:hover {
+        background-color: #0056b3;
+    }
+
+    .group-info-box {
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        padding: 15px;
+        background-color: var(--bg-white);
+    }
+
+    .group-info-box h3 {
+        font-size: 1em;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 10px;
+    }
+
+    .info-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-size: 0.9em;
+    }
+
+    .info-item .label {
+        color: #777;
+    }
+
+    .info-item .value {
+        font-weight: bold;
+        color: var(--primary-text);
+    }
+
+    .border-settings {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .border-input {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .border-input input[type="checkbox"] {
+        margin-right: 8px;
+    }
+
+    .border-color-input {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.9em;
+        color: var(--primary-text);
+    }
+
+    .color-box {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .export-section {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .export-section h3 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .export-format {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .export-format select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 0.9em;
+    }
+
+    .export-button {
+        background-color: #f0f2f5;
+        color: var(--primary-text);
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.9em;
+        transition: background-color 0.2s;
+    }
+
+    .export-button:hover {
+        background-color: #e0e0e0;
+    }
+</style>

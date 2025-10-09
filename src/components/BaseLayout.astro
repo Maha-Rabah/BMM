@@ -1,0 +1,105 @@
+---
+import Sidebar from '../components/Sidebar.astro';
+import Header from '../components/Header.astro';
+import RightSidebar from '../components/RightSidebar.astro';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <Header />
+    <Sidebar />
+    <RightSidebar />
+    <main class="content-wrapper">
+        <slot />
+    </main>
+</body>
+</html>
+
+<style is:global>
+    :root {
+        --sidebar-width: 250px;
+        --right-sidebar-width: 280px;
+        --header-height: 70px;
+        --primary-text: #333;
+        --secondary-text: #555;
+        --border-color: #eee;
+        --bg-light: #f9f9f9;
+        --bg-white: #fff;
+        --shadow: 0 2px 10px rgba(0,0,0,0.05);
+        --hover-color: #007bff;
+    }
+
+    html {
+        font-family: system-ui, sans-serif;
+        background-color: var(--bg-light);
+        scroll-behavior: smooth; 
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-light);
+        min-height: 100vh; 
+        overflow-x: hidden; 
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--primary-text);
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    p {
+        color: var(--secondary-text);
+        line-height: 1.6;
+        margin-bottom: 1em;
+    }
+
+    .content-wrapper {
+        margin-left: var(--sidebar-width);
+        margin-right: var(--right-sidebar-width);
+        margin-top: var(--header-height);
+        padding: 30px;
+        background-color: var(--bg-white);
+        min-height: calc(100vh - var(--header-height)); 
+        box-shadow: var(--shadow);
+        box-sizing: border-box;
+    }
+
+    .main-content-section {
+        background-color: var(--bg-white);
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    .main-content-section h1 {
+        font-size: 2em;
+        color: var(--primary-text);
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 10px;
+    }
+
+    .main-content-section h2 {
+        font-size: 1.5em;
+        color: var(--primary-text);
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+</style>

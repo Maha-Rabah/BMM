@@ -1,0 +1,109 @@
+---
+---
+<nav class="sidebar">
+    <ul class="sections">
+        <li>
+            <a href="#lorem-ipsum" class="section-link">Pages</a>
+            <ul class="sub-sections">
+                <li><a href="#lorem-ipsum">Lorem Ipsum</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#header1" class="section-link">Header 1</a>
+            <ul class="sub-sections">
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#header2" class="section-link">Header 2</a>
+            <ul class="sub-sections">
+                <li><a href="#section1-2">Section 1</a></li>
+                <li><a href="#section2-2">Section 2</a></li>
+                <li><a href="#section3-2">Section 3</a></li>
+                <li><a href="#section4-2">Section 4</a></li>
+            </ul>
+        </li>
+        <li><a href="#header3" class="section-link">Header 3</a></li>
+        <li><a href="#header4" class="section-link">Header 4</a></li>
+    </ul>
+</nav>
+
+<style>
+    .sidebar {
+        width: var(--sidebar-width); 
+        background-color: #1D5DC8; 
+        padding: 20px;
+        box-shadow: var(--shadow);
+        position: fixed;
+        top: 70px; 
+        left: 0; 
+        height: 100vh; 
+        overflow-y: auto; 
+        z-index: 1000; 
+        box-sizing: border-box;
+    }
+
+    .sidebar-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--border-color); 
+        padding-bottom: 15px;
+        margin-top: 15px; 
+    }
+
+    .logo {
+        width:210px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .project-title {
+        font-size: 1.2em;
+        color: var(--primary-text);
+        margin: 0;
+    }
+
+    .sections {
+        list-style: none;
+        padding: 0;
+    }
+
+    .sections > li {
+        margin-bottom: 15px;
+    }
+
+    .section-link {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        display: block;
+        padding: 8px 0;
+        transition: color 0.2s;
+    }
+
+    .section-link:hover {
+        color: var(--hover-color);
+    }
+
+    .sub-sections {
+        list-style: none;
+        padding-left: 15px;
+        margin-top: 5px;
+    }
+
+    .sub-sections li a {
+        text-decoration: none;
+        color: #C0D7FF;
+        display: block;
+        padding: 5px 0;
+        transition: color 0.2s;
+    }
+
+    .sub-sections li a:hover {
+        color: var(--hover-color);
+    }
+</style>

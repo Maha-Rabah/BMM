@@ -1,0 +1,77 @@
+---
+---
+<header class="navbar">
+        <div class="sidebar-header">
+        <img src="/logo.svg" alt="Logo" class="logo" />
+    </div>
+    <div class="navbar-left">
+    </div>
+    <div class="navbar-right">
+        <a href="#" class="nav-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="nav-icon"><i class="fa-brands fa-discord"></i></a>
+        <a href="#" class="nav-icon"><i class="fa-brands fa-telegram"></i></a>
+        <div class="theme-toggle">
+            <i class="fa-solid fa-sun"></i> Light
+        </div>
+        <div class="language-select">
+            <i class="fa-solid fa-globe"></i> English
+        </div>
+    </div>
+</header>
+
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg-white);
+        padding: 15px 30px;
+        box-shadow: var(--shadow);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        height: var(--header-height); 
+        box-sizing: border-box; 
+    }
+
+    /* .navbar-left .page-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: var(--primary-text);
+    } */
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-icon {
+        color: var(--hover-color);
+        font-size: 1.1em;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    /* .nav-icon:hover {
+        color: var(--hover-color);
+    } */
+
+    .theme-toggle, .language-select {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--secondary-text);
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+    .theme-toggle:hover, .language-select:hover {
+        color: var(--hover-color);
+    }
+
+    .theme-toggle i, .language-select i {
+        color: #777;
+    }
+</style>

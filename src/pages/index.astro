@@ -1,11 +1,149 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../components/BaseLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout title="Multimedia Website Design">
+    <div class="main-content-section">
+        <h1 id="lorem-ipsum">Lorem Ipsum</h1> 
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            This is an additional paragraph to increase content length for scrolling purposes.
+            Feel free to add more text here.
+        </p>
+        <p>
+            Another paragraph to ensure there's enough content to demonstrate scrolling with the sidebars.
+        </p>
+        <p>
+            One more paragraph, just to make sure we have ample content for a realistic scroll experience.
+        </p>
+
+        <h2 id="header1">Header 1</h2>
+        <p>
+            Content for Header 1. This section can contain more detailed information.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+        </p>
+
+        <h2 id="section1">Section 1 (under Header 1)</h2> 
+        <p>
+            Content for Section 1. This is a sub-section under Header 1.
+        </p>
+        <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+
+        <h2 id="section2">Section 2 (under Header 1)</h2> 
+        <p>
+            Content for Section 2. Another sub-section.
+        </p>
+        <p>
+            Sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2 id="section3">Section 3 (under Header 1)</h2> 
+        <p>
+            Content for Section 3.
+        </p>
+
+        <h2 id="section4">Section 4 (under Header 1)</h2> 
+        <p>
+            Content for Section 4.
+        </p>
+        <p>
+            More dummy text to fill the space and ensure scrolling works as expected.
+        </p>
+        <p>
+            This helps in visualizing how the fixed sidebars and header interact with a long main content area.
+        </p>
+
+        <h2 id="header2">Header 2</h2>
+        <p>
+            Content for Header 2. This section contains its own subsections.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua.
+        </p>
+
+        <h2 id="section1-2">Section 1 (under Header 2)</h2>
+        <p>
+            Content for Section 1 under Header 2.
+        </p>
+
+        <h2 id="section2-2">Section 2 (under Header 2)</h2> 
+        <p>
+            Content for Section 2 under Header 2.
+        </p>
+
+        <h2 id="section3-2">Section 3 (under Header 2)</h2> 
+        <p>
+            Content for Section 3 under Header 2.
+        </p>
+
+        <h2 id="section4-2">Section 4 (under Header 2)</h2> 
+        <p>
+            Content for Section 4 under Header 2.
+        </p>
+
+        <h2 id="header3">Header 3</h2> 
+        <p>
+            Content for Header 3. This is a standalone header.
+        </p>
+
+        <h2 id="header4">Header 4</h2>
+        <p>
+            Content for Header 4. The final main header.
+        </p>
+ {/* Added ID for right sidebar links */}
+        <h2 id="topic1">Topic 1 (from Right Sidebar)</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2 id="topic2">Topic 2 (from Right Sidebar)</h2> 
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h2 id="topic3">Topic 3 (from Right Sidebar)</h2>
+        <p>Content for Topic 3.</p>
+
+        <h2 id="side-topic1">Side Topic 1 (from Right Sidebar)</h2>
+        <p>Content for Side Topic 1.</p>
+
+        <h2 id="side-topic2">Side Topic 2 (from Right Sidebar)</h2>
+        <p>Content for Side Topic 2.</p>
+
+        <h2 id="side-topic3">Side Topic 3 (from Right Sidebar)</h2>
+        <p>Content for Side Topic 3.</p>
+
+        <h2 id="topic4">Topic 4 (from Right Sidebar)</h2>
+        <p>Content for Topic 4.</p>
+
+    </div>
+</BaseLayout>
