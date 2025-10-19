@@ -12,7 +12,8 @@ export default defineConfig({
 				dark: './src/assets/dark-logo.svg',
 				replacesTitle: true,
             },
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' },
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' },
 				{ icon: 'twitter', label: 'Twitter', href: 'https://twitter.com/withastro' },
 				{ icon: 'discord', label: 'Discord', href: 'https://astro.build/chat' },
 				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/avobuilds' }
