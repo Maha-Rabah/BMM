@@ -7,6 +7,13 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'نظم الوسائط المتعددة',
+			defaultLocale: 'root',
+			locales: {
+				root: {
+				label: 'العربية',
+				lang: 'ar',
+				},
+			},
 			logo: {
                 light: './src/assets/light-logo.svg',
 				dark: './src/assets/dark-logo.svg',
@@ -19,14 +26,7 @@ export default defineConfig({
 				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/avobuilds' }
 			],
 			sidebar: [
-				{
-					label: 'guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-						{ label: 'Hello World', slug: 'guides/hello-world' },
-					],
-				},
+				{ label: 'الصفحة الرئيسية', link: '/' },
 				{
 					label: 'مقدمة في نظم الوسائط المتعددة',
 					items: [
