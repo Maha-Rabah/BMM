@@ -7,6 +7,11 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'نظم الوسائط المتعددة',
+			logo: {
+                light: './src/assets/light-logo.svg',
+				dark: './src/assets/dark-logo.svg',
+				replacesTitle: true,
+            },
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' },
 				{ icon: 'twitter', label: 'Twitter', href: 'https://twitter.com/withastro' },
 				{ icon: 'discord', label: 'Discord', href: 'https://astro.build/chat' },
@@ -28,7 +33,7 @@ export default defineConfig({
 					]
 				},
 				{
-					label: 'Digital Video',
+					label: 'الفيديو الرقمي',
 					items: [
 						{ label: 'مقدمة في الفيديو الرقمي', slug: 'digital-video/0-intro-digital-video' },
 						{ label: 'مركبات الفيديو', slug: 'digital-video/1-component-video' },
