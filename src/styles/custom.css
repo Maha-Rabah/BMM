@@ -16,6 +16,35 @@
   --sl-color-text-accent: #1D5DC8;
 }
 
+/* Dark mode color overrides */
+:root[data-theme='dark'] {
+  /* Main background */
+  --sl-color-bg: #0f172a;
+  --sl-color-bg-nav: #1e293b;
+  
+  /* Content background */
+  --sl-color-bg-sidebar: #1e293b;
+  
+  /* Text colors */
+  --sl-color-white: #f1f5f9;
+  --sl-color-gray-1: #f1f5f9;
+  --sl-color-gray-2: #cbd5e1;
+  --sl-color-gray-3: #94a3b8;
+  --sl-color-gray-4: #64748b;
+  --sl-color-gray-5: #334155;
+  --sl-color-gray-6: #1e293b;
+  
+  /* Accent colors */
+  --sl-color-accent: #3b82f6;
+  --sl-color-accent-high: #60a5fa;
+  --sl-color-text-accent: #60a5fa;
+  
+  /* Border colors */
+  --sl-color-hairline: #334155;
+  --sl-color-border: #334155;
+}
+
+/* Add shadow to header */
 header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -36,6 +65,7 @@ header {
   color: #ffffff;
 }
 
+/* Sidebar dropdown caret/chevron colors */
 .sidebar .caret,
 .sidebar .chevron,
 .sidebar summary::before,
@@ -44,18 +74,44 @@ header {
   border-color: #ffffff !important;
 }
 
+/* Dropdown links */
+.sidebar details a {
+  color: #C0D7FF;
+  padding-right: 2rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* Dropdown links hover state */
+.sidebar details a:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  padding-right: 2.25rem;
+}
+
+/* Dropdown links active/selected state */
+.sidebar details a[aria-current="page"] {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-weight: 600;
+  border-right: 3px solid #ffffff;
+  padding-right: calc(2rem - 3px);
+}
+
+/* Sidebar link cards and large text */
 .sidebar .sl-link-card,
 .sidebar .large {
   color: #ffffff !important;
 }
 
+/* Font family for Arabic */
 html[lang="ar"] {
   --sl-font-family: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
 }
 
+/* Apply the font html body */
 body {
   font-family: var(--sl-font-family);
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
-
