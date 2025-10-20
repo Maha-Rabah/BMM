@@ -7,6 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'نظم الوسائط المتعددة',
+			customCss: ['./src/styles/custom.css'],
 			defaultLocale: 'root',
 			locales: {
 				root: {
