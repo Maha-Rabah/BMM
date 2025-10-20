@@ -11,7 +11,7 @@ export default defineConfig({
 			defaultLocale: 'root',
 			locales: {
 				root: {
-				label: 'العربية',
+				label: 'العربية',	
 				lang: 'ar',
 				dir: 'rtl',
 				},
