@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap');
 
-:root {
+html[lang="ar"] {
   --sl-font-family: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
 }
 
