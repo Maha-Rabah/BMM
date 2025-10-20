@@ -36,6 +36,19 @@ header {
   color: #ffffff;
 }
 
+.sidebar .caret,
+.sidebar .chevron,
+.sidebar summary::before,
+.sidebar summary::after {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.sidebar .sl-link-card,
+.sidebar .large {
+  color: #ffffff !important;
+}
+
 html[lang="ar"] {
   --sl-font-family: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
 }
