@@ -12,6 +12,7 @@ export default defineConfig({
 				root: {
 				label: 'العربية',
 				lang: 'ar',
+				dir: 'rtl',
 				},
 			},
 			logo: {
