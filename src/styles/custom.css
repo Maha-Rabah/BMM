@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap');
 
+/* src/styles/custom.css */
+
+:root {
+  /* Sidebar background color */
+  --sl-color-bg-sidebar: #1D5DC8;
+  
+  /* Sidebar text color */
+  --sl-color-gray-1: #0f0f0f;
+  
+  /* Sidebar link hover background */
+  --sl-color-gray-5: #16213e;
+  
+  /* Active/current page highlight */
+  --sl-color-text-accent: #1D5DC8;
+}
+
+header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Or target the sidebar directly */
+.sidebar {
+  background-color: #1a1a2e;
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #C0D7FF;
+}
+
+/* Sidebar active link */
+.sidebar a[aria-current="page"] {
+  background-color: #00000031;
+  color: #ffffff;
+}
+
 html[lang="ar"] {
   --sl-font-family: "Noto Sans Arabic", "Inter", system-ui, sans-serif;
 }
