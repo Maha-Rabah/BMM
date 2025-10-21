@@ -2,6 +2,9 @@
 title: "مقدمة في الفيديو الرقمي"
 description: "فهم بسيط لأساسيات الفيديو الرقمي"
 ---
+import { Image } from 'astro:assets';
+import vhsSmartphone from './src/assets/vhs-vs-smartphone.webp';
+import resolutionCompare from './src/assets/Resolution-comparison.webp';
 
 ## ما هو الفيديو الرقمي؟
 
@@ -9,6 +12,7 @@ description: "فهم بسيط لأساسيات الفيديو الرقمي"
 
 ## لماذا الفيديو الرقمي أفضل؟
 
+<Image src={vhsSmartphone} alt="Video frame sampling" widths={[400, 800]} sizes="(max-width: 800px) 100vw, 800px" />
 ### مقارنة بسيطة
 
 **الفيديو التناظري** (مثل أشرطة VHS):
@@ -34,7 +38,7 @@ description: "فهم بسيط لأساسيات الفيديو الرقمي"
 كلما زاد المعدل، كانت الحركة أنعم.
 
 ### الدقة (Resolution)
-
+<Image src={resolutionCompare} alt="Video frame sampling" widths={[400, 800]} sizes="(max-width: 800px) 100vw, 800px" />
 عدد البكسلات في الصورة:
 
 - **720p**: دقة جيدة
