@@ -3,6 +3,10 @@ title: "نظام NTSC"
 description: "المعيار التلفزيوني الأمريكي الأول وتفاصيله التقنية"
 ---
 
+import { Image } from 'astro:assets';
+import ntscCrtScan from '/src/assets/ntsc-crt-scanline.webp';
+import smpteColorBars from '/src/assets/smpte-color-bars.webp';
+
 ## النشأة والتسمية
 
 يُمثِّل نظام NTSC - الذي يشير اختصاره إلى "لجنة النظام التلفزيوني الوطني" (National Television System Committee) - أول معيار تلفزيوني تم تطويره في الولايات المتحدة الأمريكية.
@@ -50,7 +54,7 @@ description: "المعيار التلفزيوني الأمريكي الأول و
 - **مدة الإطار الواحد**: 33.37 مللي ثانية
 
 ## تقنية المسح المتشابك
-
+<Image src={ntscCrtScan} alt="رسم توضيحي لمسح CRT في نظام NTSC" widths={[400, 800]} sizes="(max-width: 800px) 100vw, 800px" />
 يستخدم NTSC تقنية المسح المتشابك، حيث ينقسم كل إطار إلى حقلين منفصلين:
 
 - **الحقل الأول**: الخطوط الفردية (1، 3، 5، ...)
@@ -70,6 +74,7 @@ description: "المعيار التلفزيوني الأمريكي الأول و
 - الباقي مخصص لفترات التزامن والعودة
 
 ## نظام الألوان المتطور
+<Image src={smpteColorBars} alt="ألوان شريط SMPTE" widths={[400, 800]} sizes="(max-width: 800px) 100vw, 800px" />
 
 يعتمد NTSC على نموذج الألوان **YIQ** المتقدم:
 
